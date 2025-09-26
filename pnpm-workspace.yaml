@@ -1,0 +1,9 @@
+packages:
+  - 'apps/*'
+  - 'packages/*'
+minimumReleaseAge: 1440
+minimumReleaseAgeExclude:
+  - '@godark/*'
+
+catalog:
+  chalk: ^4.1.2

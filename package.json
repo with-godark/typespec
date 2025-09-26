@@ -1,0 +1,13 @@
+{
+  "name": "@godark/typespec",
+  "version": "0.1.0",
+  "description": "A set of typespec libraries",
+  "keywords": [],
+  "author": "Vijayasingam",
+  "license": "MIT",
+  "packageManager": "pnpm@10.17.1",
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=10"
+  }
+}
