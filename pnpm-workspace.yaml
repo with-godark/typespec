@@ -6,4 +6,4 @@ minimumReleaseAgeExclude:
   - '@godark/*'
 
 catalog:
-  chalk: ^4.1.2
+    "@typespec/compiler": 1.4.0

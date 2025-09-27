@@ -2,7 +2,7 @@
   "name": "@godark/typespec",
   "version": "0.1.0",
   "description": "A set of typespec libraries",
-  "keywords": [],
+  "keywords": ["typespec", "OpenAPI specifications"],
   "author": "Vijayasingam",
   "license": "MIT",
   "packageManager": "pnpm@10.17.1",
