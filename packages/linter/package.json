@@ -6,7 +6,8 @@
   "scripts": {
     "clean": "rm -rf ./dist ./temp",
     "build": "tsc -p .",
-    "test": "vitest run"
+    "test": "vitest run",
+    "format": "pnpm exec prettier . --write"
   },
   "keywords": [
     "typespec",
@@ -23,6 +24,7 @@
   },
   "devDependencies": {
     "@typespec/compiler": "catalog:",
+    "prettier": "catalog:",
     "typescript": "catalog:",
     "vitest": "catalog:"
   },
