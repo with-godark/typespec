@@ -56,6 +56,6 @@ jobs:
         run: pnpm --filter @godark/typespec-linter build
 
       - name: Publish
-        run: pnpm publish @godark/typespec-linter --access public
+        run: pnpm publish packages/linter --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
