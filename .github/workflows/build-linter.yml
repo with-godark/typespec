@@ -4,12 +4,12 @@ on:
     branches:
       - main
     paths:
-      - ../../packages/linter
+      - packages/linter
   pull_request:
     branches:
       - main
     paths:
-      - ../../packages/linter
+      - packages/linter
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event_name == 'pull_request' && github.head_ref || github.ref }}
