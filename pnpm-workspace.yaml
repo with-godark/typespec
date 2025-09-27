@@ -1,9 +1,13 @@
 packages:
-  - 'apps/*'
-  - 'packages/*'
-minimumReleaseAge: 1440
-minimumReleaseAgeExclude:
-  - '@godark/*'
+  - apps/*
+  - packages/*
 
 catalog:
-    "@typespec/compiler": 1.4.0
+  '@typespec/compiler': 1.4.0
+  typescript: 5.9.2
+  vitest: 3.2.4
+
+minimumReleaseAge: 1440
+
+minimumReleaseAgeExclude:
+  - '@godark/*'

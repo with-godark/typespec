@@ -1,0 +1,44 @@
+{
+  "name": "@godark/typespec-linter",
+  "version": "0.1.0",
+  "description": "Ruleset for linting Typespec",
+  "main": "./dist/src/index.js",
+  "scripts": {
+    "clean": "rm -rf ./dist ./temp",
+    "build": "tsc -p .",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "typespec",
+    "OpenAPI specifications",
+    "linter"
+  ],
+  "author": "Vijayasingam",
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "pnpm@10.17.1",
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=10"
+  },
+  "devDependencies": {
+    "@typespec/compiler": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  },
+  "peerDependencies": {
+    "@typespec/compiler": "catalog:"
+  },
+  "readme": "https://github.com/with-godark/typespec/blob/main/README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/with-godark/typespec.git"
+  },
+  "bugs": {
+    "url": "https://github.com/with-godark/typespec/issues"
+  },
+  "files": [
+    "dist/**",
+    "!dist/test/**"
+  ]
+}
