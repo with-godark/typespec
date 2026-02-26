@@ -2,10 +2,13 @@
   "name": "@godark/typespec",
   "version": "0.1.0",
   "description": "A set of typespec libraries",
-  "keywords": ["typespec", "OpenAPI specifications"],
+  "keywords": [
+    "typespec",
+    "OpenAPI specifications"
+  ],
   "author": "Vijayasingam",
   "license": "MIT",
-  "packageManager": "pnpm@10.17.1",
+  "packageManager": "pnpm@10.30.3",
   "engines": {
     "node": ">=22",
     "pnpm": ">=10"
