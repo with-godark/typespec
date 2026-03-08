@@ -1,0 +1,40 @@
+{
+  "name": "@godark/typespec-examples",
+  "version": "0.0.1",
+  "description": "Example implementations of Typespec libraries",
+  "scripts": {
+    "compile": "tsp compile ./petstore/main.tsp",
+    "format": "tsp format \"**/*.tsp\"",
+    "check:types": "tsp format --check \"**/*.tsp\""
+  },
+  "keywords": [
+    "typespec",
+    "OpenAPI specifications",
+    "linter"
+  ],
+  "author": "Vijayasingam",
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "pnpm@10.17.1",
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=10"
+  },
+  "devDependencies": {
+    "@typespec/compiler": "catalog:",
+    "@typespec/openapi3": "catalog:",
+    "@typespec/http": "catalog:",
+    "@typespec/openapi": "catalog:"
+  },
+  "peerDependencies": {
+    "@typespec/compiler": "catalog:"
+  },
+  "readme": "https://github.com/with-godark/typespec/blob/main/README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/with-godark/typespec.git"
+  },
+  "bugs": {
+    "url": "https://github.com/with-godark/typespec/issues"
+  }
+}
