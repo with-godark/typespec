@@ -1,17 +1,13 @@
 import { createRule, getDoc, paramMessage } from '@typespec/compiler';
 
-export const docRequiredRule = createRule({
-  name: 'no-model-doc',
+export const documentationRequiredRule = createRule({
+  name: 'documentation-required',
   severity: 'warning',
-  // Short description of what this linter rule does. To be used for generated summary of a linter.
-  description: 'Enforce documentation on models.',
+  description: 'Enforce documentation on operations, models, and enums.',
   messages: {
-    default: `Must be documented.`,
-    // Different messages can be provided
-    models: `Models must be documented.`,
-
-    // Message can be parameterized
-    enums: paramMessage`Enum ${'enumName'} must be documented.`,
+    default: 'Operation must include documentation.',
+    models: 'Model must include documentation.',
+    enums: paramMessage`Enum '${'enumName'}' must include documentation.`,
   },
   create(context) {
     return {

@@ -1,6 +1,6 @@
 {
   "name": "@godark/typespec-linter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Ruleset for linting Typespec",
   "main": "./dist/src/index.js",
   "scripts": {
@@ -24,12 +24,16 @@
   },
   "devDependencies": {
     "@typespec/compiler": "catalog:",
+    "@typespec/http": "catalog:",
+    "@typespec/openapi": "catalog:",
     "prettier": "catalog:",
     "typescript": "catalog:",
     "vitest": "catalog:"
   },
   "peerDependencies": {
-    "@typespec/compiler": "catalog:"
+    "@typespec/compiler": "catalog:",
+    "@typespec/http": "catalog:",
+    "@typespec/openapi": "catalog:"
   },
   "readme": "https://github.com/with-godark/typespec/blob/main/README.md",
   "repository": {

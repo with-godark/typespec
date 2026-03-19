@@ -1,11 +1,11 @@
 import { createRule, paramMessage } from '@typespec/compiler';
 
-export const casingRule = createRule({
-  name: 'casing',
+export const modelNamePascalCaseRule = createRule({
+  name: 'model-name-pascal-case',
   severity: 'warning',
-  description: 'Enforce TypeSpec recommended naming convention for types.',
+  description: 'Enforce PascalCase model names.',
   messages: {
-    default: paramMessage`Must match expected casing '${'casing'}'`,
+    default: paramMessage`Model name must match expected casing '${'casing'}'.`,
   },
   create: (context) => {
     return {
@@ -21,11 +21,6 @@ export const casingRule = createRule({
   },
 });
 
-/**
- * Checks whether a given name is in PascalCase
- * @param name the name to check
- * @returns true if the name is in PascalCase
- */
 function isPascalCaseNoAcronyms(name: string): boolean {
   if (name === '') return true;
   return /^([A-Z][a-z0-9]+)*[A-Z]?$/.test(name);
