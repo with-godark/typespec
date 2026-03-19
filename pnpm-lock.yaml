@@ -13,8 +13,8 @@ catalogs:
       specifier: 1.9.1
       version: 1.9.1
     '@typespec/openapi':
-      specifier: 1.9.0
-      version: 1.9.0
+      specifier: 1.10.0
+      version: 1.10.0
     '@typespec/openapi3':
       specifier: 1.9.0
       version: 1.9.0
@@ -42,10 +42,10 @@ importers:
         version: 1.9.1(@typespec/compiler@1.9.0)
       '@typespec/openapi':
         specifier: 'catalog:'
-        version: 1.9.0(@typespec/compiler@1.9.0)(@typespec/http@1.9.1(@typespec/compiler@1.9.0))
+        version: 1.10.0(@typespec/compiler@1.9.0)(@typespec/http@1.9.1(@typespec/compiler@1.9.0))
       '@typespec/openapi3':
         specifier: 'catalog:'
-        version: 1.9.0(@typespec/compiler@1.9.0)(@typespec/http@1.9.1(@typespec/compiler@1.9.0))(@typespec/openapi@1.9.0(@typespec/compiler@1.9.0)(@typespec/http@1.9.1(@typespec/compiler@1.9.0)))
+        version: 1.9.0(@typespec/compiler@1.9.0)(@typespec/http@1.9.1(@typespec/compiler@1.9.0))(@typespec/openapi@1.10.0(@typespec/compiler@1.9.0)(@typespec/http@1.9.1(@typespec/compiler@1.9.0)))
 
   packages/linter:
     devDependencies:
@@ -57,7 +57,7 @@ importers:
         version: 1.9.1(@typespec/compiler@1.9.0)
       '@typespec/openapi':
         specifier: 'catalog:'
-        version: 1.9.0(@typespec/compiler@1.9.0)(@typespec/http@1.9.1(@typespec/compiler@1.9.0))
+        version: 1.10.0(@typespec/compiler@1.9.0)(@typespec/http@1.9.1(@typespec/compiler@1.9.0))
       prettier:
         specifier: 'catalog:'
         version: 3.8.1
@@ -601,12 +601,12 @@ packages:
       '@typespec/xml':
         optional: true
 
-  '@typespec/openapi@1.9.0':
-    resolution: {integrity: sha512-5ieXCWRLcyFLv3IFk26ena/RW/NxvT5KiHaoNVFRd79J0XZjFcE0Od6Lxxqj4dWmCo3C8oKtOwFoQuie18G3lQ==}
+  '@typespec/openapi@1.10.0':
+    resolution: {integrity: sha512-tukmyp+c9CFlA2FdF61XfT9eTe5WXWz6J8pOrJ9+IYg0BcBwhJkvDj6BYpDD6SjxbRr1wO5ZL2Whe6MequsyVw==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
-      '@typespec/compiler': ^1.9.0
-      '@typespec/http': ^1.9.0
+      '@typespec/compiler': ^1.10.0
+      '@typespec/http': ^1.10.0
 
   '@vitest/expect@4.0.18':
     resolution: {integrity: sha512-8sCWUyckXXYvx4opfzVY03EOiYVxyNrHS5QxX3DAIi5dpJAAkyJezHCP77VMX4HKA2LDT/Jpfo8i2r5BE3GnQQ==}
@@ -1423,7 +1423,7 @@ snapshots:
     dependencies:
       '@typespec/compiler': 1.9.0
 
-  '@typespec/openapi3@1.9.0(@typespec/compiler@1.9.0)(@typespec/http@1.9.1(@typespec/compiler@1.9.0))(@typespec/openapi@1.9.0(@typespec/compiler@1.9.0)(@typespec/http@1.9.1(@typespec/compiler@1.9.0)))':
+  '@typespec/openapi3@1.9.0(@typespec/compiler@1.9.0)(@typespec/http@1.9.1(@typespec/compiler@1.9.0))(@typespec/openapi@1.10.0(@typespec/compiler@1.9.0)(@typespec/http@1.9.1(@typespec/compiler@1.9.0)))':
     dependencies:
       '@scalar/json-magic': 0.9.6
       '@scalar/openapi-parser': 0.24.17
@@ -1431,10 +1431,10 @@ snapshots:
       '@typespec/asset-emitter': 0.79.0(@typespec/compiler@1.9.0)
       '@typespec/compiler': 1.9.0
       '@typespec/http': 1.9.1(@typespec/compiler@1.9.0)
-      '@typespec/openapi': 1.9.0(@typespec/compiler@1.9.0)(@typespec/http@1.9.1(@typespec/compiler@1.9.0))
+      '@typespec/openapi': 1.10.0(@typespec/compiler@1.9.0)(@typespec/http@1.9.1(@typespec/compiler@1.9.0))
       yaml: 2.8.2
 
-  '@typespec/openapi@1.9.0(@typespec/compiler@1.9.0)(@typespec/http@1.9.1(@typespec/compiler@1.9.0))':
+  '@typespec/openapi@1.10.0(@typespec/compiler@1.9.0)(@typespec/http@1.9.1(@typespec/compiler@1.9.0))':
     dependencies:
       '@typespec/compiler': 1.9.0
       '@typespec/http': 1.9.1(@typespec/compiler@1.9.0)
